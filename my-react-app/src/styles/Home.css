@@ -1,0 +1,70 @@
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.book-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 15px 30px 20px;
+  box-sizing: border-box;
+
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  width: 500px;
+  border-radius:  50px;
+  background-color:white;
+  color: black;
+  font-family:'Franklin Gothic Medium';
+  font-size: 1rem;
+  border: 1px solid white; 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #e50914;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #f40612;
+}
+
+@media (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
